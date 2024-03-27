@@ -1,0 +1,5 @@
+{
+  "html-to-css-autocompletion.triggerCharacters": true,
+  "html-to-css-autocompletion.autocompletionFilesScope": "multi-root",
+  "editor.lineHeight": 2
+}
