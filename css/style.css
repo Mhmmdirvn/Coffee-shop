@@ -182,9 +182,10 @@ body {
   background-size: cover;
   background-position: center;
   position: relative;
+  mask-image: linear-gradient(rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0));
 }
 
-.hero::after {
+/* .hero::after {
   content: "";
   display: block;
   position: absolute;
@@ -196,11 +197,23 @@ body {
     rgba(255, 255, 255, 0) 50%
   );
   bottom: 0;
+} */
+
+.hero .mask-container {
+  position: absolute;
+  mask-image: url(../images/header-bg.svg);
+  mask-size: cover;
+  mask-position: center;
+  inset: 0;
 }
 
 .hero .content {
   padding: 1.4rem 7%;
-  max-width: 60rem;
+  /* max-width: 60rem; */
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  top: 100px;
 }
 
 .hero .content h1 {
@@ -271,6 +284,10 @@ body {
 
 .about .row .about-img img {
   width: 100%;
+  mask-image: url(../images/menu/splash.svg);
+  mask-size: 60%;
+  mask-repeat: no-repeat;
+  mask-position: center;
 }
 
 .about .row .content {
